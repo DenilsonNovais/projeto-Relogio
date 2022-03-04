@@ -39,6 +39,7 @@ html {
 
 .relogio_hora:hover {
     border: 5px solid rgb(199, 33, 27);
+    transition-duration: .3s;
 }
 
 .creditos {
@@ -58,10 +59,36 @@ html {
     transition-duration: .5s;
 }
 
+.data_caixa {
+    position: absolute;
+    top: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.data {
+    padding: 2px 25px;
+    background-color: rgba(34, 31, 31, 0.863);
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 5px solid aqua;
+}
+
+.data:hover {
+    border: 5px solid rgb(199, 33, 27);
+    transition-duration: .3s;
+}
+
 @media screen and (max-width: 576px){
     
     .relogio_caixa {
         font-size: 4rem;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.507);
     }
 
     .relogio_hora {
@@ -76,6 +103,12 @@ html {
     .relogio_hora:hover {
         border: 5px solid rgb(199, 33, 27);  
     }
+
+    .data_caixa {
+        position: absolute;
+        top: 460px;
+        font-size: 1.6rem;
+    }
 }
 
 @media screen and (min-width: 577px) {
@@ -84,13 +117,16 @@ html {
         width: auto;
         border-radius: 50%;
         padding: 120px 20px;
-        border: 5px solid rgb(199, 33, 27);
         border: 5px solid aqua;
-
     }
 
     .relogio_caixa {
         font-size: 6rem;
+    }
+
+    .data_caixa {
+        position: absolute;
+        top: 510px;
     }
     
 }

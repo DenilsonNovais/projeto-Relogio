@@ -22,10 +22,10 @@ function adicionarHora () {
     let relogioFundo = document.querySelector(".relogio_fundo");
 
     // Condições para alterar a imagem de fundo de acordo com a hora
-    if (horaAgora >= 5 && horaAgora <= 12) {
+    if (horaAgora >= 5 && horaAgora <= 11) {
         relogioFundo.cssText = "background-image: url(.imagens/nascer_do_sol.jpg)";
     }
-    else if (horaAgora > 12 && horaAgora <= 13) {
+    else if (horaAgora > 11 && horaAgora <= 13) {
         relogioFundo.style.cssText = "background-image: url(./imagens/meio_dia.jpg)";  
     }
     else if (horaAgora > 13 && horaAgora <= 17 ) {
